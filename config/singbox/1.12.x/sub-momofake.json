@@ -3,7 +3,7 @@
     "servers": [
       {"tag": "local", "type": "udp", "server": "223.5.5.5"},
       {"tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local"},
-      {"tag": "foreign", "type": "https", "server": "8.8.8.8","client_subnet": "112.253.109.1", "detour": "🚀 默认代理"}
+      {"tag": "foreign", "type": "https", "server": "8.8.8.8", "detour": "🚀 默认代理"}
     ],
     "rules": [
       {"clash_mode": "direct", "server": "local"},
@@ -13,6 +13,7 @@
     ],
     "final": "foreign",
     "strategy": "ipv4_only",
+    "client_subnet": "112.253.109.1",
     "independent_cache": true,
     "reverse_mapping": true
   },
@@ -150,7 +151,7 @@
       "external_controller": "0.0.0.0:9095",
       "external_ui": "/etc/momo/run/ui",
       "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "🚀 默认代理",
+      "external_ui_download_detour": "🎯 全球直连",
       "secret": "",
       "default_mode": "rule"
     }
